@@ -2,7 +2,11 @@
 2-nd remake of the hello machine for testing Travis CI/CD
 
 # TODO
-
+- [ ] create real .travis.yml for test hello
+- [ ] make a PR that fails
+- [ ] fix the PR so it can pass
+- [ ] setup realease in Travis
+- [ ] Do a new GitHub release
 
 # DONE
 
