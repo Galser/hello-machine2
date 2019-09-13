@@ -2,7 +2,6 @@
 2-nd remake of the hello machine for testing Travis CI/CD
 
 # TODO
-- [ ] create real .travis.yml for test hello
 - [ ] make a PR that fails
 - [ ] fix the PR so it can pass
 - [ ] setup realease in Travis
@@ -13,3 +12,4 @@
 - [x] create hello shell script
 - [x] create test for hello script
 - [x] add Travis config .travis.yml
+- [x] create real .travis.yml for test hello
