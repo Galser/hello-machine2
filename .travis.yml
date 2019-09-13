@@ -1,6 +1,14 @@
 language: generic
 dist: xenial
 sudo: required
-
 script:
 - bash test-hello.sh
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: Oe765XG5gqgY43r2OkfQexWJv6yYAGaH2bKnNlGamd0bA/R09DDH89RqMY+wIpgnLDYiOTYA070QME1UAUUBykoYcCT8GqR+UpRTxZ+2iewNFg3oekqI5KemDliNXCRAc0qoIZpFSrk5aTChYKLYLVdowkhBBXuI5d76/EBeLrkXisJrJ+hdxduC+FtUybwrcCoO5yKghkkIettMdRU2XqoMzSD/V8G2v17hqUPNXiZICBhKagL7zp2dSco4NTJH6IC4hYSBr1aVPQ6wUpp4EjBi2jCsIE/JMBDLfRpUnbf44/6mG/rJx8/YslbnZTjN3Fqgx4AbcjIr+hnZEtrI8n1qHaZ3z1ohfQ2+6yhtGJNe+MZyCMnFAwlPh7AXKw6mlm+9C2ACuiHcKsW5nkbptxxKUgUGS5OsmBVjGtgsyB3ZRBheH5T7pcyEsKU30P0tvkzOAWa7M+R6lBumGgJeeGOGjRHhJV8roqGLDciocK8wQsz6uJrKn7YCQkNbQzFXYC2Ik9t+dRVBH+VpYH0Tjt3Hab77ja6yPiN6HiTdzGv4vJiX4SynQDAzog3bCV1EgE+z5gJe4c54GjKQ1s6CyKNjxbDg00mRRuFsfjWihgFPFP2SNEqf9CSEKXBZjnM+TRPhkIG6nIJsMVvVJCQF2cTFyAaFY8whLzCVv1Wn3vM=
+  file: 'hello.sh'
+  on:
+    repo: Galser/hello-machine2
+    tags: true
